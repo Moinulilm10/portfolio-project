@@ -164,7 +164,7 @@ export const HeroSection = () => {
                 visible: { y: 0, opacity: 1, transition: { duration: 0.8 } },
               }}
             >
-              <span className="block text-foreground">I'm Sahil</span>
+              <span className="block text-foreground">I&apos;m Moinul</span>
               <motion.span
                 className="block bg-gradient-to-r from-primary via-purple-600 to-pink-600 bg-clip-text text-transparent mt-2"
                 animate={{ backgroundPosition: ["0%", "100%", "0%"] }}
