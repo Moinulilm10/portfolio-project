@@ -52,14 +52,31 @@ export const AboutSection = () => {
       items: [
         "React",
         "Next.js",
+        "Redux / Redux Toolkit",
         "TypeScript",
         "JavaScript",
-        "HTML",
         "Tailwind",
       ],
     },
-    { category: "Backend", items: ["Node.js", "Express", "Java", "Python"] },
-    { category: "Cloud", items: ["AWS", "Docker", "Vercel", "MongoDB"] },
+    {
+      category: "Backend",
+      items: ["Node.js", "Express.js", "Nest.js", "PHP", "Python"],
+    },
+    {
+      category: "Database",
+      items: [
+        "MySQL",
+        "PostgreSQL",
+        "MongoDB",
+        "Redis",
+        "DynamoDB",
+        "Firebase",
+      ],
+    },
+    {
+      category: "Cloud",
+      items: ["AWS", "Docker", "Vercel"],
+    },
   ];
 
   const features = [
