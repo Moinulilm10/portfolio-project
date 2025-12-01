@@ -106,11 +106,11 @@ export const AboutSection = () => {
 
   const tabContent = {
     personal:
-      "Passionate about creating digital solutions that make a difference. When I'm not coding, I'm exploring new technologies, contributing to open-source, and mentoring aspiring developers.",
+      "I’m Moinul Islam, a passionate software engineer who loves transforming ideas into clean, scalable, and user-friendly applications. My journey started with solving small problems and grew into building full-stack features using React, Node.js, TypeScript, Prisma, and modern UI tools like Tailwind CSS. I enjoy crafting intuitive interfaces, integrating APIs, and designing systems that are both efficient and enjoyable to use. What excites me most is turning complex requirements into simple, elegant solutions while continuously learning and improving. For me, software isn’t just code it’s about creating meaningful digital experiences that make a real impact.",
     professional:
-      "With 1+ years in full-stack development, I've delivered 15+ successful projects using modern technologies. I specialize in scalable architecture and performance optimization.",
+      "With 1.8+ years in full-stack development,I have contributed to developing and optimizing key features for multiple web applications at RedOrange Communications, improving performance for over 10,000 users by reducing load times and critical bugs, while consistently delivering client-specific solutions on time to boost engagement and satisfaction. Previously, as a Frontend Engineer at Qwik IT Services, I collaborated on complex projects, building secure authentication systems and responsive interfaces, and independently integrated Next.js to enhance scalability and code quality across applications.",
     approach:
-      "I believe in clean code, thorough testing, and user-centered design. My process emphasizes collaboration, agile methodologies, and continuous improvement.",
+      "My approach centers on writing clean, maintainable code while deeply understanding user needs. I prioritize scalable architecture and performance optimization without compromising usability. I believe in collaboration, continuous learning, and leveraging modern tools and best practices to deliver solutions that are not just functional but also intuitive and reliable. Problem-solving with attention to detail and adapting quickly to feedback are key parts of how I build impactful digital experiences.",
   };
 
   useEffect(() => {
