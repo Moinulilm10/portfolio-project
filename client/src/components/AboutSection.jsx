@@ -21,19 +21,19 @@ export const AboutSection = () => {
 
   const achievements = [
     {
-      number: "15+",
+      number: "6+",
       label: "Projects",
       icon: <Briefcase className="h-5 w-5" />,
       suffix: "",
     },
     {
-      number: "1",
+      number: "1.5",
       label: "Years Exp",
       icon: <Calendar className="h-5 w-5" />,
       suffix: "+",
     },
     {
-      number: "99",
+      number: "95",
       label: "Success",
       icon: <Target className="h-5 w-5" />,
       suffix: "%",
@@ -75,7 +75,7 @@ export const AboutSection = () => {
     },
     {
       category: "Cloud",
-      items: ["AWS", "Docker", "Vercel"],
+      items: ["Docker", "Vercel"],
     },
   ];
 
@@ -131,8 +131,8 @@ export const AboutSection = () => {
   // Programmatic download function
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/Sahil-resume.pdf"; // Must be in public folder
-    link.download = "Sahil-resume.pdf";
+    link.href = "/Moinul_Islam_CV.pdf";
+    link.download = "Moinul_Islam_CV.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -354,7 +354,7 @@ export const AboutSection = () => {
                 {/* Download Button */}
                 <button
                   onClick={handleDownload}
-                  className="flex-1 block w-full p-3 sm:p-4 border border-border rounded-xl text-center font-semibold transition-all duration-300 hover:bg-accent hover:border-primary/30 hover:scale-105 hover:shadow-lg group"
+                  className="flex-1 block w-full p-3 sm:p-4 border border-border rounded-xl text-center font-semibold transition-all duration-300 hover:bg-accent hover:border-primary/30 hover:scale-105 hover:shadow-lg group cursor-pointer"
                 >
                   <div className="flex items-center justify-center gap-2 sm:gap-3">
                     <Download className="h-4 sm:h-5 w-4 sm:w-5 group-hover:translate-y-0.5 transition-transform duration-300" />

@@ -81,7 +81,7 @@ export const HeroSection = () => {
 
   const handleViewResume = () => {
     // Open resume in new tab
-    window.open("/Sahil-resume.pdf", "_blank", "noopener,noreferrer");
+    window.open("/Moinul_Islam_CV.pdf", "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -245,7 +245,7 @@ export const HeroSection = () => {
 
               <motion.button
                 onClick={handleViewResume}
-                className="group relative overflow-hidden px-6 py-4 rounded-xl font-semibold border border-border text-muted-foreground hover:border-primary/30 transition-all duration-300 bg-background/60 backdrop-blur-sm text-sm flex items-center justify-center gap-2"
+                className="group relative overflow-hidden px-6 py-4 rounded-xl font-semibold border border-border text-muted-foreground hover:border-primary/30 transition-all duration-300 bg-background/60 backdrop-blur-sm text-sm flex items-center justify-center gap-2 cursor-pointer"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -261,13 +261,13 @@ export const HeroSection = () => {
                 visible: { y: 0, opacity: 1, transition: { duration: 0.8 } },
               }}
             >
-              <div className="text-sm text-muted-foreground">
+              {/* <div className="text-sm text-muted-foreground">
                 🚀{" "}
                 <span className="text-primary font-semibold">
                   Available Immediately
                 </span>{" "}
                 for Full-Stack and Frontend roles
-              </div>
+              </div> */}
             </motion.div>
           </div>
 
