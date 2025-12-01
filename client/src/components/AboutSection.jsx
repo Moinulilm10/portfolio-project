@@ -60,7 +60,7 @@ export const AboutSection = () => {
     },
     {
       category: "Backend",
-      items: ["Node.js", "Express.js", "Nest.js", "PHP", "Python"],
+      items: ["Node.js", "Express.js", "Nest.js", "PHP", "Laravel", "Python"],
     },
     {
       category: "Database",
