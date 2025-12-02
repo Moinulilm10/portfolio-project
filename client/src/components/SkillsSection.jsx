@@ -42,9 +42,9 @@ import vercelIcon from "@/assets/icons/vercel.png";
 import vscodeIcon from "@/assets/icons/vscode.png";
 
 const skills = [
-  // Programming Fundamentals
-  { name: "C", level: 70, category: "fundamentals", icon: "c" },
-  { name: "C++", level: 65, category: "fundamentals", icon: "cpp" },
+  // Programming Fundamentals (category id: "programming")
+  { name: "C", level: 85, category: "programming", icon: "c" },
+  { name: "C++", level: 90, category: "programming", icon: "cpp" },
 
   // Frontend
   { name: "HTML5", level: 95, category: "frontend", icon: "html" },
@@ -80,14 +80,14 @@ const skills = [
   { name: "PHP", level: 70, category: "backend", icon: "php" },
   { name: "Laravel", level: 65, category: "backend", icon: "laravel" },
 
-  // Databases
-  { name: "MySQL", level: 90, category: "databases", icon: "mysql" },
-  { name: "PostgreSQL", level: 65, category: "databases", icon: "postgresql" },
-  { name: "MongoDB", level: 90, category: "databases", icon: "mongodb" },
-  { name: "DynamoDB", level: 60, category: "databases", icon: "dynamodb" },
-  { name: "Firebase", level: 80, category: "tools", icon: "firebase" },
+  // Databases (category id: "database")
+  { name: "MySQL", level: 90, category: "database", icon: "mysql" },
+  { name: "PostgreSQL", level: 65, category: "database", icon: "postgresql" },
+  { name: "MongoDB", level: 90, category: "database", icon: "mongodb" },
+  { name: "DynamoDB", level: 60, category: "database", icon: "dynamodb" },
 
   // Tools
+  { name: "Firebase", level: 80, category: "tools", icon: "firebase" },
   { name: "Git", level: 90, category: "tools", icon: "git" },
   { name: "GitHub", level: 90, category: "tools", icon: "github" },
   { name: "Docker", level: 70, category: "tools", icon: "docker" },
@@ -97,12 +97,13 @@ const skills = [
   { name: "Figma", level: 85, category: "tools", icon: "figma" },
   { name: "ClickUp", level: 75, category: "tools", icon: "clickup" },
 
-  // DevOps / Deployment
+  // DevOps / Deployment (category id: "devops")
   { name: "CI/CD", level: 70, category: "devops", icon: "cicd" },
   { name: "Vercel", level: 85, category: "devops", icon: "vercel" },
   { name: "Netlify", level: 80, category: "devops", icon: "netlify" },
 ];
 
+// Categories remain unchanged
 const categories = [
   {
     id: "all",
@@ -141,6 +142,7 @@ const categories = [
   },
 ];
 
+// iconImages and all other components remain unchanged
 const iconImages = {
   html: htmlIcon,
   css: cssIcon,
@@ -149,8 +151,6 @@ const iconImages = {
   typescript: tsIcon,
   react: reactIcon,
   nextjs: nextjsIcon,
-
-  // Backend
   nodejs: nodejsIcon,
   express: expressIcon,
   graphql: graphqlIcon,
@@ -158,14 +158,10 @@ const iconImages = {
   nestjs: nestjsIcon,
   php: phpIcon,
   laravel: laravelIcon,
-
-  // Databases
   mysql: MySQLIcon,
   postgresql: postgresqlIcon,
   mongodb: mongodbIcon,
   dynamodb: dynamodbIcon,
-
-  // Tools
   git: gitIcon,
   github: githubIcon,
   docker: dockerIcon,
@@ -175,23 +171,15 @@ const iconImages = {
   jira: jiraIcon,
   figma: figmaIcon,
   clickup: clickupIcon,
-
-  // Frontend Extras
   redux: reduxIcon,
   reduxToolkit: reduxToolkitIcon,
   tanstackQuery: tanstackQueryIcon,
   shadcn: shadcnIcon,
-
-  // Fundamentals
   c: cIcon,
   cpp: cppIcon,
-
-  // DevOps / Deployment
   vercel: vercelIcon,
   netlify: netlifyIcon,
   cicd: cicdIcon,
-
-  // Not used / fallback if required later
   java: javaIcon,
   sql: SQLIcon,
 };
