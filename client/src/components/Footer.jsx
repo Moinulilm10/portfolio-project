@@ -32,7 +32,7 @@ export const Footer = () => {
     },
     {
       icon: <Phone size={16} />,
-      text: "+91 9315145594",
+      text: "+8801775100961",
       href: "tel:+8801775100961",
     },
   ];
