@@ -79,7 +79,7 @@ export const Footer = () => {
               <p className="text-gray-600 dark:text-gray-300 text-sm">
                 Full Stack Developer creating meaningful experiences.
               </p>
-              <div className="flex space-x-4">
+              <div className="flex space-x-4 justify-center">
                 {socialLinks.map((social, index) => (
                   <motion.a
                     key={index}
@@ -122,14 +122,14 @@ export const Footer = () => {
 
             {/* Contact */}
             <motion.div variants={itemVariants}>
-              <h4 className="text-gray-900 dark:text-white font-medium mb-4 text-sm uppercase tracking-wider">
+              <h4 className="text-gray-900 dark:text-white font-medium mb-4 text-sm uppercase tracking-wider ">
                 Contact
               </h4>
               <ul className="space-y-3">
                 {contactInfo.map((info, index) => (
                   <motion.li
                     key={index}
-                    className="flex items-start space-x-3 text-sm"
+                    className="flex items-center justify-center space-x-3 text-sm"
                     whileHover={{ scale: 1.02 }}
                   >
                     <span className="text-gray-600 dark:text-gray-400 mt-0.5">
