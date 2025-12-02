@@ -10,16 +10,6 @@ export const Footer = () => {
       href: "https://linkedin.com/in/moinulilm10",
       label: "LinkedIn",
     },
-    // {
-    //   icon: <Instagram size={18} />,
-    //   href: "https://instagram.com/dubbinut",
-    //   label: "Instagram",
-    // },
-    // {
-    //   icon: <Youtube size={18} />,
-    //   href: "https://youtube.com/@codewithkinu",
-    //   label: "YouTube",
-    // },
     {
       icon: <Github size={18} />,
       href: "https://github.com/moinulilm10",
