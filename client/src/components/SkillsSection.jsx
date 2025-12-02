@@ -42,6 +42,10 @@ import vercelIcon from "@/assets/icons/vercel.png";
 import vscodeIcon from "@/assets/icons/vscode.png";
 
 const skills = [
+  // Programming Fundamentals
+  { name: "C", level: 70, category: "fundamentals", icon: "c" },
+  { name: "C++", level: 65, category: "fundamentals", icon: "cpp" },
+
   // Frontend
   { name: "HTML5", level: 95, category: "frontend", icon: "html" },
   { name: "CSS3", level: 90, category: "frontend", icon: "css" },
@@ -93,10 +97,6 @@ const skills = [
   { name: "Figma", level: 85, category: "tools", icon: "figma" },
   { name: "ClickUp", level: 75, category: "tools", icon: "clickup" },
 
-  // Programming Fundamentals
-  { name: "C", level: 70, category: "fundamentals", icon: "c" },
-  { name: "C++", level: 65, category: "fundamentals", icon: "cpp" },
-
   // DevOps / Deployment
   { name: "CI/CD", level: 70, category: "devops", icon: "cicd" },
   { name: "Vercel", level: 85, category: "devops", icon: "vercel" },
@@ -110,6 +110,11 @@ const categories = [
     color: "bg-gradient-to-r from-purple-500 to-pink-500",
   },
   {
+    id: "programming",
+    label: "Programming Fundamentals",
+    color: "bg-gradient-to-r from-purple-500 to-pink-500",
+  },
+  {
     id: "frontend",
     label: "Frontend",
     color: "bg-gradient-to-r from-blue-500 to-cyan-500",
@@ -117,6 +122,11 @@ const categories = [
   {
     id: "backend",
     label: "Backend",
+    color: "bg-gradient-to-r from-green-500 to-emerald-500",
+  },
+  {
+    id: "database",
+    label: "Database",
     color: "bg-gradient-to-r from-green-500 to-emerald-500",
   },
   {
@@ -280,7 +290,7 @@ export const SkillsSection = () => {
             My Skills
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            Technologies I've mastered and my proficiency levels
+            Technologies I&apos;ve mastered and my proficiency levels
           </p>
         </motion.div>
 
