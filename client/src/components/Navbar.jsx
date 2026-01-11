@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import {
   BookOpen,
   Briefcase,
+  BriefcaseBusiness,
   Code,
   Github,
   Globe,
@@ -22,6 +23,7 @@ const navItems = [
   { name: "Home", href: "#hero", icon: Home },
   { name: "About", href: "#about", icon: User },
   { name: "Skills", href: "#skills", icon: Code },
+  { name: "Experience", href: "#experience", icon: BriefcaseBusiness },
   { name: "Projects", href: "#projects", icon: Briefcase },
   { name: "Testimonials", href: "#testimonials", icon: MessageSquare },
   { name: "Contact", href: "#contact", icon: Mail },
