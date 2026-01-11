@@ -1,11 +1,12 @@
-import { Navbar } from "../components/Navbar";
 import { StarBackground } from "@/components/StarBackground";
-import { HeroSection } from "../components/HeroSection";
 import { AboutSection } from "../components/AboutSection";
-import { SkillsSection } from "../components/SkillsSection";
-import { ProjectsSection } from "../components/ProjectsSection";
 import { ContactSection } from "../components/ContactSection";
+import ExperienceSection from "../components/ExperienceSection";
 import { Footer } from "../components/Footer";
+import { HeroSection } from "../components/HeroSection";
+import { Navbar } from "../components/Navbar";
+import { ProjectsSection } from "../components/ProjectsSection";
+import { SkillsSection } from "../components/SkillsSection";
 import { TestimonialSection } from "../components/Testimonial";
 
 export const Home = () => {
@@ -21,11 +22,11 @@ export const Home = () => {
       <main>
         <HeroSection />
         <AboutSection />
+        <ExperienceSection />
         <SkillsSection />
         <ProjectsSection />
         <TestimonialSection />
         <ContactSection />
-        
       </main>
 
       {/* Footer */}
