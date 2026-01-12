@@ -78,7 +78,7 @@ Feel free to connect with me through the Contact section on the site or via [Lin
 
 ---
 
-## 📬 here is privious homepage.. -----
+## 📬 here is previous homepage.. -----
 
 ```bash
 import { ArrowDown, MousePointerClick, Sparkles } from "lucide-react";
