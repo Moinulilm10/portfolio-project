@@ -5,16 +5,22 @@ import { useRef } from "react";
 const experiences = [
   {
     role: "Web Developer",
-    company: "RedOrange Communications",
+    company: "RedOrange Limited",
     location: "Dhaka, Bangladesh",
     period: "Oct 2024 - Present",
     description: [
-      "Architected and optimized high-scale web solutions serving 10K+ active users, engineering performance improvements that slashed load times by 30%.",
-      "Designed robust frontend systems to enhance application stability by 25%, directly driving a 20% increase in user engagement through superior reliability.",
-      "Led the end-to-end delivery of complex client features with a 90% on-time success rate, translating intricate requirements into seamless, high-performance digital experiences.",
+      "Engineered advanced data synchronization layers using TanStack Query, implementing optimistic updates and intelligent caching to eliminate loading latency for 10K+ users.",
+      "Mastered frontend performance optimization via strict memoization and list virtualization, effectively preventing unnecessary re-renders and slashing main-thread blocking time by 30%.",
+      "Instilled a culture of code reliability by integrating comprehensive unit testing workflows, significantly reducing critical regression cycles before deployment.",
+      "Standardized codebase architecture with clear, maintainable documentation and component guidelines, streamlining developer onboarding and ensuring long-term scalability.",
     ],
     tech: [
       "React",
+      "Laravel",
+      "Tailwind CSS",
+      "TanStack Query",
+      "Vite",
+      "MySQL",
       "System Architecture",
       "React Performance",
       "Scalable Solutions",
@@ -26,11 +32,23 @@ const experiences = [
     location: "New Brunswick, Canada",
     period: "Nov 2023 - Jul 2024",
     description: [
-      "Co-engineered a secure, scalable authentication infrastructure, laying the foundation for robust user data integrity and platform security.",
-      "Spearheaded the implementation of modern Next.js architectures, establishing patterns for code scalability and long-term maintainability.",
-      "Crafted responsive, component-driven UI systems that unified user interactions across devices, delivering a consistent and premium user experience.",
+      "Spearheaded the migration to high-performance Next.js architectures, establishing server-side rendering patterns that optimized SEO and initial load velocity.",
+      "Architected secure, scalable authentication workflows, laying a robust foundation for user data integrity across the platform.",
+      "Refactored monolithic legacy modules using SOLID principles, transforming them into modular, testable components to improve code maintainability.",
+      "Designed and implemented a premium, atomic component library, enforcing consistent UI/UX patterns and responsive design across all application interfaces.",
     ],
-    tech: ["Next.js Architecture", "Auth Systems", "Component Design"],
+    tech: [
+      "Next.js",
+      "Auth Systems",
+      "Component Design",
+      "Tailwind CSS",
+      "Vite",
+      "MongoDB",
+      "Python",
+      "Django",
+      "React Performance",
+      "Scalable Solutions",
+    ],
   },
 ];
 
@@ -90,16 +108,13 @@ const ExperienceCard = ({ experience, index }) => {
           <div className="md:w-2/3 text-left">
             <ul className="space-y-4">
               {experience.description.map((point, i) => (
-                <motion.li
+                <li
                   key={i}
-                  initial={{ opacity: 0, x: 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.3 + i * 0.1 }}
                   className="flex items-start gap-3 text-muted-foreground group-hover:text-foreground/90 transition-colors"
                 >
                   <span className="mt-2 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
                   <span className="leading-relaxed">{point}</span>
-                </motion.li>
+                </li>
               ))}
             </ul>
           </div>
