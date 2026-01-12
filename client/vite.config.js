@@ -11,4 +11,15 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ["react", "react-dom", "react-router-dom"],
+          framer: ["framer-motion"],
+          ui: ["@radix-ui/react-toast", "lucide-react", "react-icons", "clsx", "tailwind-merge"],
+        },
+      },
+    },
+  },
 });

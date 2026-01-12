@@ -10,30 +10,12 @@ import {
   TrendingUp,
   Zap,
 } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
+import { CodeTypingEffect } from "./CodeTypingEffect";
 
 export const HeroSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
-  const [currentCodeLine, setCurrentCodeLine] = useState(0);
-  const [displayedCode, setDisplayedCode] = useState("");
-
-  const codeSnippets = [
-    "import { FullStackDeveloper } from 'moinul.dev';",
-    "",
-    "const developer = new FullStackDeveloper({",
-    "  name: 'Moinul Islam',",
-    "  stack: ['React.js', 'Next.js', 'Node.js', 'Express.js', 'TypeScript', 'MongoDB', 'PostgreSQL'],",
-    "  focus: 'Building performant, scalable, and maintainable web applications',",
-    "  status: 'Open to new opportunities'",
-    "});",
-    "",
-    "await developer.launchPortfolio();",
-    "// Featured: SaaS, E-commerce, Real Estate, AI Chat Applications",
-    "",
-    "developer.connect();",
-    "console.log('🚀 Let\\'s build innovative solutions that make an impact!');",
-  ];
 
   const achievements = [
     {
@@ -58,26 +40,6 @@ export const HeroSection = () => {
     },
   ];
 
-  useEffect(() => {
-    const currentLine = codeSnippets[currentCodeLine];
-    if (displayedCode.length < currentLine.length) {
-      setTimeout(() => {
-        setDisplayedCode(currentLine.slice(0, displayedCode.length + 1));
-      }, 30);
-    } else {
-      setTimeout(() => {
-        if (currentCodeLine < codeSnippets.length - 1) {
-          setCurrentCodeLine((prev) => prev + 1);
-          setDisplayedCode("");
-        } else {
-          setTimeout(() => {
-            setCurrentCodeLine(0);
-            setDisplayedCode("");
-          }, 5000);
-        }
-      }, 800);
-    }
-  }, [displayedCode, currentCodeLine]);
 
   const handleViewResume = () => {
     // Open resume in new tab
@@ -298,64 +260,7 @@ export const HeroSection = () => {
                   <div className="w-4 h-4 bg-green-400/20 rounded-full animate-pulse"></div>
                 </div>
 
-                <div className="font-mono text-sm bg-primary/5 rounded-lg border border-primary/10 min-h-[280px] flex">
-                  <div className="p-6 w-full">
-                    <div className="grid grid-cols-1 gap-1 h-full content-start">
-                      {codeSnippets.map((line, index) => (
-                        <div
-                          key={index}
-                          className={`
-                            min-h-[20px] flex items-start
-                            ${
-                              index < currentCodeLine
-                                ? "opacity-100"
-                                : "opacity-0"
-                            }
-                            ${index === currentCodeLine ? "opacity-100" : ""}
-                            transition-opacity duration-150 ease-in-out
-                            ${
-                              line.includes("import")
-                                ? "text-purple-400 font-semibold"
-                                : line.includes("const") || line.includes("new")
-                                ? "text-blue-400 font-semibold"
-                                : line.includes("React") ||
-                                  line.includes("Node.js") ||
-                                  line.includes("TypeScript")
-                                ? "text-cyan-400"
-                                : line.includes("FullStackDeveloper")
-                                ? "text-emerald-400 font-semibold"
-                                : line.includes("//")
-                                ? "text-muted-foreground italic"
-                                : line.includes("await") ||
-                                  line.includes("connect")
-                                ? "text-yellow-400"
-                                : line.includes("'")
-                                ? "text-amber-400"
-                                : "text-foreground"
-                            }
-                          `}
-                        >
-                          {index < currentCodeLine ? line : ""}
-                          {index === currentCodeLine ? (
-                            <>
-                              {displayedCode}
-                              <motion.span
-                                animate={{ opacity: [1, 0, 1] }}
-                                transition={{ duration: 0.8, repeat: Infinity }}
-                                className="ml-1 text-primary inline-block"
-                              >
-                                ▊
-                              </motion.span>
-                            </>
-                          ) : (
-                            ""
-                          )}
-                          {line === "" && "‎"}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
+                <CodeTypingEffect />
 
                 <motion.div
                   className="absolute -bottom-3 -right-3 w-14 h-14 bg-gradient-to-r from-primary to-purple-600 rounded-xl flex items-center justify-center border-2 border-background shadow-2xl"

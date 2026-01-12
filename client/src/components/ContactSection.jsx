@@ -180,10 +180,10 @@ export const ContactSection = () => {
             </div>
 
             <div className="pt-6 sm:pt-8">
-              <h4 className="font-medium mb-3 sm:mb-4 text-xs sm:text-sm text-muted-foreground">
+              <h4 className="font-medium mb-3 sm:mb-4 text-xs sm:text-sm text-muted-foreground text-left pl-3">
                 Find me on
               </h4>
-              <div className="flex gap-2 sm:gap-3 justify-center">
+              <div className="flex gap-2 sm:gap-3 justify-start">
                 {[
                   {
                     icon: Linkedin,
