@@ -76,7 +76,7 @@ You can deploy the site using platforms like:
 
 ## 📬 Contact
 
-Feel free to connect with me through the Contact section on the site or via [LinkedIn](https://linkedin.com/in/codewithkinu) or [Email](mailto:moinulilm10@gmail.com).
+Feel free to connect with me through the Contact section on the site or via [LinkedIn](https://www.linkedin.com/in/moinulilm10) or [Email](mailto:moinulilm10@gmail.com).
 
 ---
 
