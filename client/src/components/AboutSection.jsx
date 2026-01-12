@@ -106,9 +106,9 @@ export const AboutSection = () => {
 
   const tabContent = {
     personal:
-      "I’m Moinul Islam, a passionate software engineer who loves transforming ideas into clean, scalable, and user-friendly applications. My journey started with solving small problems and grew into building full-stack features using React, Node.js, TypeScript, Prisma, and modern UI tools like Tailwind CSS. I enjoy crafting intuitive interfaces, integrating APIs, and designing systems that are both efficient and enjoyable to use. What excites me most is turning complex requirements into simple, elegant solutions while continuously learning and improving. For me, software isn’t just code it’s about creating meaningful digital experiences that make a real impact.",
+      "I’m Moinul Islam, a Full Stack Engineer dedicated to building scalable, high-performance applications. With expertise in React, Node.js, and TypeScript, I architect clean codebases and intuitive user experiences. I thrive on simplifying complex requirements into elegant systems that deliver real impact.",
     professional:
-      "With 1.8+ years in full-stack development,I have contributed to developing and optimizing key features for multiple web applications at RedOrange Communications, improving performance for over 10,000 users by reducing load times and critical bugs, while consistently delivering client-specific solutions on time to boost engagement and satisfaction. Previously, as a Frontend Engineer at Qwik IT Services, I collaborated on complex projects, building secure authentication systems and responsive interfaces, and independently integrated Next.js to enhance scalability and code quality across applications.",
+      "With 1.8+ years of full-stack experience, I engineer high-performance solutions for scalable, high-traffic applications at RedOrange Limited. I specialize in system optimization and reliability. Previously at Qwik IT Services, I architected secure authentication systems and scalable Next.js applications, delivering robust, user-centric digital products.",
     approach:
       "My approach centers on writing clean, maintainable code while deeply understanding user needs. I prioritize scalable architecture and performance optimization without compromising usability. I believe in collaboration, continuous learning, and leveraging modern tools and best practices to deliver solutions that are not just functional but also intuitive and reliable. Problem-solving with attention to detail and adapting quickly to feedback are key parts of how I build impactful digital experiences.",
   };
@@ -148,17 +148,15 @@ export const AboutSection = () => {
         <div
           className="absolute w-72 sm:w-96 h-72 sm:h-96 bg-primary/5 rounded-full blur-3xl transition-all duration-1000 ease-out"
           style={{
-            transform: `translate(${mousePosition.x * 0.02}px, ${
-              mousePosition.y * 0.02
-            }px)`,
+            transform: `translate(${mousePosition.x * 0.02}px, ${mousePosition.y * 0.02
+              }px)`,
           }}
         />
         <div
           className="absolute w-60 sm:w-80 h-60 sm:h-80 bg-secondary/5 rounded-full blur-3xl transition-all duration-1500 ease-out"
           style={{
-            transform: `translate(${mousePosition.x * -0.03}px, ${
-              mousePosition.y * -0.03
-            }px)`,
+            transform: `translate(${mousePosition.x * -0.03}px, ${mousePosition.y * -0.03
+              }px)`,
           }}
         />
         <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:64px_64px]" />
@@ -237,11 +235,10 @@ export const AboutSection = () => {
                       {achievements.map((achievement, index) => (
                         <div
                           key={index}
-                          className={`p-2 sm:p-3 rounded-xl bg-background/50 border border-border transition-all duration-300 hover:scale-105 hover:border-primary/30 ${
-                            counter === index
-                              ? "bg-primary/10 border-primary/50"
-                              : ""
-                          }`}
+                          className={`p-2 sm:p-3 rounded-xl bg-background/50 border border-border transition-all duration-300 hover:scale-105 hover:border-primary/30 ${counter === index
+                            ? "bg-primary/10 border-primary/50"
+                            : ""
+                            }`}
                         >
                           <div className="flex items-center gap-2 justify-center md:justify-start">
                             {achievement.icon}
@@ -267,11 +264,10 @@ export const AboutSection = () => {
                     <button
                       key={tab}
                       onClick={() => setActiveTab(tab)}
-                      className={`flex-1 py-2 sm:py-3 px-2 sm:px-4 text-sm sm:text-base font-medium transition-all duration-300 ${
-                        activeTab === tab
-                          ? "text-primary border-b-2 border-primary"
-                          : "text-muted-foreground hover:text-foreground"
-                      }`}
+                      className={`flex-1 py-2 sm:py-3 px-2 sm:px-4 text-sm sm:text-base font-medium transition-all duration-300 ${activeTab === tab
+                        ? "text-primary border-b-2 border-primary"
+                        : "text-muted-foreground hover:text-foreground"
+                        }`}
                     >
                       {tab.charAt(0).toUpperCase() + tab.slice(1)}
                     </button>
