@@ -264,7 +264,7 @@ export const AboutSection = () => {
                     <button
                       key={tab}
                       onClick={() => setActiveTab(tab)}
-                      className={`flex-1 py-2 sm:py-3 px-2 sm:px-4 text-sm sm:text-base font-medium transition-all duration-300 ${activeTab === tab
+                      className={`flex-1 py-2 sm:py-3 px-2 sm:px-4 text-sm sm:text-base font-medium transition-all duration-300 cursor-pointer ${activeTab === tab
                         ? "text-primary border-b-2 border-primary"
                         : "text-muted-foreground hover:text-foreground"
                         }`}
